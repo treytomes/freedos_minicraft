@@ -9,5 +9,6 @@ cd \
 @rem wcl main.c
 @rem main
 
-nasm timer.asm -o timer.exe
+@rem nasm timer.asm -o timer.exe
+nasm print.asm -o print.exe
 

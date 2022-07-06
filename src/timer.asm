@@ -4,7 +4,7 @@
 
 		jmp start
 
-ms_per_cycle equ 55
+msPerCycle equ 55
 
 hrs:	dw 0
 min:	dw 0
@@ -24,7 +24,7 @@ onTimer:
 
 		add		word [cs:ticks], 1
 
-		add		word [cs:ms], ms_per_cycle
+		add		word [cs:ms], msPerCycle
 		cmp		word [cs:ms], 1000
 		jle		onTimer_end
 		
@@ -65,7 +65,7 @@ loop:
 		mov		ax, word [cs:ticks]
 		mov		bx, word [cs:lastUpdateTime]
 		sub		ax, bx
-		cmp		ax, 300 / ms_per_cycle				; This is approximately every 300ms.
+		cmp		ax, 300 / msPerCycle				; This is approximately every 300ms.
 		jbe		loop
 
 	; Save the last update time.
