@@ -1,32 +1,12 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+readme.txt
+qemu
+*.7z
+*.bak
+*.img
+*.iso
+*.zip
+src/**/*.err
+src/**/*.exe
+src/**/*.obj
+src/**/__wcl__.lnk
+# TODO: Should I ignore the .lnk files too?  I'm not so sure.
