@@ -6,6 +6,8 @@ d:
 cd \
 
 @rem WCL is Watcom Link.  There is also WCC and WLINK.  Is there a WMAKE?
+@rem wcl main.c
+@rem main
 
-wcl hello.c
-hello
+nasm timer.asm -o timer.exe
+
