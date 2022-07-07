@@ -10,5 +10,7 @@ cd \
 @rem main
 
 @rem nasm timer.asm -o timer.exe
-nasm print.asm -o print.exe
+@rem nasm print.asm -o print.exe
+nasm sound.asm -o sound.exe
+sound
 
